@@ -3,9 +3,12 @@
 
 Library app
 
-
-
 ## HTTP Verbs
+| HTTP METHOD | URL             | Payload | Description                  |
+|-------------|-----------------|---------|------------------------------|
+| GET         | /users/:user_id | {id: 2} | test test test test                      |
+| GET         | /books          | {}      | testtesttesttesttest |
+
 
 new_mainuser_session GET    /mainusers/sign_in(.:format)                                                                      devise/sessions#new
                         mainuser_session POST   /mainusers/sign_in(.:format)                                                                      devise/sessions#create
