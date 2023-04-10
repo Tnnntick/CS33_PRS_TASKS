@@ -8,6 +8,7 @@ class LibrariesController < ApplicationController
 
   # GET /libraries/1 or /libraries/1.json
   def show
+    @libraries = Library.find(params[:id])
   end
 
   # GET /libraries/new
@@ -17,6 +18,7 @@ class LibrariesController < ApplicationController
 
   # GET /libraries/1/edit
   def edit
+    @libraries = Library.find(params[:id])
   end
 
   # POST /libraries or /libraries.json
